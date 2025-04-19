@@ -240,10 +240,10 @@ document.querySelectorAll('.header-filter').forEach(btn => {
     const matchingFilterBtn = document.querySelector(`.isotope-filters li[data-filter="${targetFilter}"]`);
 
     if (matchingFilterBtn) {
-      matchingFilterBtn.click(); // 🔥 Triggers the existing filter logic
+      matchingFilterBtn.click(); //Triggers the existing filter logic
     }
 
-    const portfolioSection = document.querySelector('#portfolio');
+    const portfolioSection = document.querySelector('#projects');
     if (portfolioSection) {
       const scrollMarginTop = parseInt(getComputedStyle(portfolioSection).scrollMarginTop || 0);
       const top = portfolioSection.offsetTop - scrollMarginTop;
@@ -252,7 +252,10 @@ document.querySelectorAll('.header-filter').forEach(btn => {
         top: top,
         behavior: 'smooth'
       });
+
+      history.pushState(null, null, '#projects');
     }
+
     
   });
 });

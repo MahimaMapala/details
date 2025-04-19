@@ -1,0 +1,58 @@
+[
+    {
+      "title": "Modern Dashboard Interface",
+      "description": "Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.",
+      "category": "AIML",
+      "image": "assets/img/projects/app-1.jpg",
+      "link": "pages/projects-details.html",
+      "tag": "Web Design"
+    },
+    {
+      "title": "Zomato Food Trends",
+      "description": "Analyzed city-wise trends using NLP and visualized order spikes.",
+      "category": "Visual",
+      "image": "assets/img/projects/app-2.jpg",
+      "link": "pages/zomato-details.html",
+      "tag": "Data Visualization"
+    },
+    {
+      "title": "Zomato Food Trends",
+      "description": "Analyzed city-wise trends using NLP and visualized order spikes.",
+      "category": "Games",
+      "image": "assets/img/projects/app-2.jpg",
+      "link": "pages/zomato-details.html",
+      "tag": "Data Visualization"
+    },
+    {
+      "title": "Zomato Food Trends",
+      "description": "Analyzed city-wise trends using NLP and visualized order spikes.",
+      "category": "AIML",
+      "image": "assets/img/projects/app-2.jpg",
+      "link": "pages/zomato-details.html",
+      "tag": "Data Visualization"
+    },    {
+      "title": "Modern Dashboard Interface",
+      "description": "Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.",
+      "category": "AIML",
+      "image": "assets/img/projects/app-1.jpg",
+      "link": "pages/projects-details.html",
+      "tag": "Web Design"
+    },
+    {
+      "title": "Zomato Food Trends",
+      "description": "Analyzed city-wise trends using NLP and visualized order spikes.",
+      "category": "Visual",
+      "image": "assets/img/projects/app-2.jpg",
+      "link": "pages/zomato-details.html",
+      "tag": "Data Visualization"
+    },
+    {
+      "title": "Zomato Food Trends",
+      "description": "Analyzed city-wise trends using NLP and visualized order spikes.",
+      "category": "Games",
+      "image": "assets/img/projects/app-2.jpg",
+      "link": "pages/zomato-details.html",
+      "tag": "Data Visualization"
+    }
+  ]
+  

@@ -832,7 +832,7 @@ section,
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
-.resume .resume-title {
+.work .work-title {
   color: var(--heading-color);
   font-size: 26px;
   font-weight: 700;
@@ -841,10 +841,10 @@ section,
 }
 
 
-.resume .resume-wrapper .timeline {
+.work .work-wrapper .timeline {
   position: relative;
 }
-.resume .resume-wrapper .timeline::before {
+.work .work-wrapper .timeline::before {
   content: "";
   position: absolute;
   left: 20%;
@@ -855,34 +855,34 @@ section,
 color-mix(in srgb, var(--accent-color), transparent 85%);
 }
 
-.resume .resume-wrapper .timeline .timeline-item {
+.work .work-wrapper .timeline .timeline-item {
   display: flex
 ;
   align-items: flex-start;
   margin-bottom: 2.5rem;
   position: relative;
 }
-.resume .resume-wrapper .timeline .timeline-item .timeline-left {
+.work .work-wrapper .timeline .timeline-item .timeline-left {
   width: 20%;
   padding-right: 3rem;
 }
-.resume .resume-wrapper .timeline .timeline-item .timeline-right {
+.work .work-wrapper .timeline .timeline-item .timeline-right {
   width: 70%;
   padding-left: 3rem;
   margin-top: -4px;
 }
-.resume .resume-wrapper .timeline .timeline-item .timeline-left .company {
+.work .work-wrapper .timeline .timeline-item .timeline-left .company {
   color: var(--heading-color);
   font-weight: 600;
   font-size: 1.1rem;
   margin-bottom: 0.25rem;
 }
 
-.resume .resume-wrapper .timeline .timeline-item .timeline-left .period {
+.work .work-wrapper .timeline .timeline-item .timeline-left .period {
   color: var(--accent-color);
   font-size: 0.9rem;
 }
-.resume .resume-wrapper .timeline .timeline-item .timeline-dot {
+.work .work-wrapper .timeline .timeline-item .timeline-dot {
   position: absolute;
   left: calc(20% + 1px);
   transform: translateX(-50%);
@@ -892,30 +892,30 @@ color-mix(in srgb, var(--accent-color), transparent 85%);
   border-radius: 50%;
 }
 
-.resume .resume-wrapper .timeline .timeline-item .timeline-right .position {
+.work .work-wrapper .timeline .timeline-item .timeline-right .position {
   color: var(--heading-color);
   font-size: 1.2rem;
   margin-bottom: 0.6rem;
   font-weight: 600;
 }
 
-.resume .resume-wrapper .timeline .timeline-item .timeline-right .description {
+.work .work-wrapper .timeline .timeline-item .timeline-right .description {
   color: 
 color-mix(in srgb, var(--default-color), transparent 25%);
 }
 
 
-.resume .resume-wrapper .timeline .timeline-item .timeline-right ul {
+.work .work-wrapper .timeline .timeline-item .timeline-right ul {
   padding-left: 20px;
 }
 
-.resume .resume-wrapper .timeline .timeline-item .timeline-right ul li {
+.work .work-wrapper .timeline .timeline-item .timeline-right ul li {
   padding-bottom: 12px;
 }
 
 
 @media (max-width: 992px) {
-  .resume .resume-wrapper .timeline .timeline-item .timeline-left {
+  .work .work-wrapper .timeline .timeline-item .timeline-left {
       width: 100%;
       text-align: left;
       padding-right: 0;
@@ -925,37 +925,37 @@ color-mix(in srgb, var(--default-color), transparent 25%);
   }
 }
 @media (max-width: 992px) {
-  .resume .resume-wrapper .timeline .timeline-item .timeline-right {
+  .work .work-wrapper .timeline .timeline-item .timeline-right {
       width: 100%;
       padding-left: 2.5rem;
   }
 }
 @media (max-width: 992px) {
-  .resume .resume-wrapper .timeline .timeline-item .timeline-dot {
+  .work .work-wrapper .timeline .timeline-item .timeline-dot {
       left: calc(1rem + 1px);
   }
 }
 @media (max-width: 992px) {
-  .resume .resume-wrapper .timeline .timeline-item {
+  .work .work-wrapper .timeline .timeline-item {
       flex-direction: column;
       margin-bottom: 20px;
   }
 }
 @media (max-width: 992px) {
-  .resume .resume-wrapper .timeline::before {
+  .work .work-wrapper .timeline::before {
       left: 1rem;
   }
 }
 
 @media (max-width: 992px) {
-  .resume .resume-wrapper .resume-block h2 {
+  .work .work-wrapper .work-block h2 {
       font-size: 2rem;
   }
 }
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
-.portfolio .portfolio-filters {
+.projects .projects-filters {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -965,18 +965,18 @@ color-mix(in srgb, var(--default-color), transparent 25%);
   list-style: none;
 }
 
-.portfolio .portfolio-filters li i {
+.projects .projects-filters li i {
   font-size: 1.1em;
   margin-right: 8px;
   transition: transform 0.3s ease;
 }
 
-.portfolio .portfolio-filters li:first-child {
+.projects .projects-filters li:first-child {
   margin-left: 0;
 }
 
 
-.portfolio .portfolio-filters li:hover {
+.projects .projects-filters li:hover {
   color: var(--accent-color);
   background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
   /*outline: var(--accent-color) dashed 1px;*/
@@ -985,14 +985,14 @@ color-mix(in srgb, var(--default-color), transparent 25%);
 
 }
 
-.portfolio .portfolio-filters li.filter-active:hover  {
+.projects .projects-filters li.filter-active:hover  {
 color: var(--contrast-color); 
 outline: var(--accent-color) dashed 1px;
 outline-offset: 2px;
 transform: translateY(-4px);
 }
 
-.portfolio .portfolio-filters li.filter-active {
+.projects .projects-filters li.filter-active {
   color: var(--contrast-color);
   background-color: var(--accent-color);
   outline: var(--accent-color) solid 1px;
@@ -1000,7 +1000,7 @@ transform: translateY(-4px);
 }
 
 
-.portfolio .portfolio-filters li {
+.projects .projects-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 20px 10px 20px;
@@ -1016,13 +1016,13 @@ transform: translateY(-4px);
 }
 
 
-.portfolio .portfolio-filters li:last-child {
+.projects .projects-filters li:last-child {
   margin-right: 0;
 }
 
 
 @media (max-width: 575px) {
-    .portfolio .portfolio-filters li {
+    .projects .projects-filters li {
         font-size: 14px;
         margin: 0 0 10px 0;
     }
@@ -1031,17 +1031,17 @@ transform: translateY(-4px);
 
 
 
-.portfolio .portfolio-content {
+.projects .projects-content {
   position: relative;
   overflow: hidden;
   
 }
 
-.portfolio .portfolio-card .portfolio-content img {
+.projects .projects-card .projects-content img {
   transition: 0.3s;
 }
 
-.portfolio-description-box {
+.projects-description-box {
   background: white;
   margin-top: -10px; /* slight overlap if you want */
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -1050,7 +1050,7 @@ transform: translateY(-4px);
 }
 
 
-.portfolio .portfolio-card .portfolio-content .portfolio-info {
+.projects .projects-card .projects-content .projects-info {
   opacity: 0;
   position: absolute;
   inset: 0;
@@ -1060,7 +1060,7 @@ transform: translateY(-4px);
   padding: 15px;
 }
 
-.portfolio .portfolio-card .portfolio-content .portfolio-info h4 {
+.projects .projects-card .projects-content .projects-info h4 {
   font-size: 14px;
   padding: 5px 10px;
   font-weight: 400;
@@ -1069,7 +1069,7 @@ transform: translateY(-4px);
   background-color: var(--accent-color);
 }
 
-.portfolio .portfolio-card .portfolio-content .portfolio-info p {
+.projects .projects-card .projects-content .projects-info p {
   position: absolute;
   bottom: 10px;
   text-align: center;
@@ -1082,11 +1082,11 @@ transform: translateY(-4px);
 }
 
 
-.portfolio .portfolio-card:hover {
+.projects .projects-card:hover {
   transform: scale(1.05);
 }
 
-.portfolio .portfolio-card {
+.projects .projects-card {
   background-color: var(--surface-color);
   border-radius: 15px;
   overflow: hidden;
@@ -1097,7 +1097,7 @@ transform: translateY(-4px);
     transition: all 0.3s ease-in-out;
 }
 
-.portfolio .portfolio-card .portfolio-description-box h5 {
+.projects .projects-card .projects-description-box h5 {
   font-size: 15px;
   margin: 0 0 15px;
   font-weight: 600;
@@ -1105,7 +1105,7 @@ transform: translateY(-4px);
   padding-bottom:  5px;
 }
 
-.portfolio .portfolio-description-box small {
+.projects .projects-description-box small {
   display: inline-block;
   font-size: 12px;
   letter-spacing: 1px;
@@ -1119,12 +1119,14 @@ transform: translateY(-4px);
   
 
 
-.portfolio .portfolio-card .portfolio-description-box p {
+.projects .projects-card .projects-description-box p {
   font-size: 12px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin: 0;
   line-height: 1.6;
 }
+
+
 
 /*--------------------------------------------------------------
 # Services Section
@@ -1380,32 +1382,32 @@ transform: translateY(-4px);
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
+.projects-details .projects-details-slider img {
   width: 100%;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination {
+.projects-details .projects-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.projects-details .projects-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.projects-details .projects-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 
-.portfolio-details .portfolio-info {
+.projects-details .projects-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-details .portfolio-info h3 {
+.projects-details .projects-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1413,27 +1415,27 @@ transform: translateY(-4px);
   border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
-.portfolio-details .portfolio-info ul {
+.projects-details .projects-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.projects-details .projects-info ul li+li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
+.projects-details .projects-description {
   padding-top: 30px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.projects-details .projects-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.projects-details .projects-description p {
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
