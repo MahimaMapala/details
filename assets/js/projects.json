@@ -53,6 +53,22 @@
       "image": "assets/img/projects/app-2.jpg",
       "link": "pages/zomato-details.html",
       "tag": "Data Visualization"
+    },
+    {
+      "title": "Zomato Food Trends",
+      "description": "Analyzed city-wise trends using NLP and visualized order spikes.",
+      "category": "Visual",
+      "image": "assets/img/projects/app-2.jpg",
+      "link": "pages/zomato-details.html",
+      "tag": "Data Visualization"
+    },
+    {
+      "title": "Zomato Food Trends",
+      "description": "Analyzed city-wise trends using NLP and visualized order spikes.",
+      "category": "Games",
+      "image": "assets/img/projects/app-2.jpg",
+      "link": "pages/zomato-details.html",
+      "tag": "Data Visualization"
     }
   ]
   

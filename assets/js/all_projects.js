@@ -20,22 +20,22 @@ fetch('assets/js/projects.json')
       const categoryClass = categoryMap[project.category] || '';
 
       const projectItem = document.createElement('div');
-      projectItem.classList.add('col-lg-4', 'col-md-6', 'isotope-item', `filter-${project.category.toLowerCase()}`);
+      projectItem.classList.add('col-4' ,'isotope-item', `filter-${project.category.toLowerCase()}`);
       
       projectItem.innerHTML = `
-        <div class="projects-card">
-          <a href="${project.link}" title="More Details" class="text-decoration-none text-reset">
-            <div class="projects-content h-100">
-              <img src="${project.image}" class="img-fluid" alt="${project.title}">
-            </div>
+          <div class="projects-card">
+            <a href="${project.link}" title="More Details" class="text-decoration-none text-reset">
+              <div class="projects-content h-100">
+                <img src="${project.image}" class="img-fluid" alt="${project.title}">
+              </div>
 
-            <div class="projects-description-box p-3">
-              <small class="text-primary fw-bold text-uppercase">${project.category}</small>
-              <h5 class="mt-2 mb-1">${project.title}</h5>
-              <p class="text-muted mb-0">${project.description}</p>
-            </div>
-          </a>
-        </div>
+              <div class="projects-description-box p-3">
+                <small class="text-primary fw-bold text-uppercase">${project.category}</small>
+                <h5 class="mt-2 mb-1">${project.title}</h5>
+                <p class="text-muted mb-0">${project.description}</p>
+              </div>
+            </a>
+          </div>
       `;
 
       projectsContainer.appendChild(projectItem);

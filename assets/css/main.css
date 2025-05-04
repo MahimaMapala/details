@@ -1037,11 +1037,31 @@ transform: translateY(-4px);
   
 }
 
-.projects .projects-card .projects-content img {
-  transition: 0.3s;
+.projects .projects-card {
+  background-color: var(--surface-color);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 
+    0 10px 15px rgba(0, 0, 0, 0.1), 
+    0 20px 25px rgba(0, 0, 0, 0.08), 
+    0 5px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
-.projects-description-box {
+.projects .projects-card .projects-content img {
+  width: 100%; /* Ensure images are full width */
+  height: auto;
+  object-fit: cover; /* Maintain aspect ratio */
+  transition: 0.3s;
+  border-radius: 15px;
+  transform: scale(0.9);
+}
+
+.projects .projects-card .projects-description-box {
   background: white;
   margin-top: -10px; /* slight overlap if you want */
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -1084,18 +1104,10 @@ transform: translateY(-4px);
 
 .projects .projects-card:hover {
   transform: scale(1.05);
+  position: relative;
 }
 
-.projects .projects-card {
-  background-color: var(--surface-color);
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 
-    0 10px 15px rgba(0, 0, 0, 0.1), 
-    0 20px 25px rgba(0, 0, 0, 0.08), 
-    0 5px 5px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease-in-out;
-}
+
 
 .projects .projects-card .projects-description-box h5 {
   font-size: 15px;
@@ -1126,6 +1138,47 @@ transform: translateY(-4px);
   line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+  /* Adjust card layout and size for mobile devices */
+  .projects .projects-card {
+    flex-direction: column;
+    min-height: 200px; /* Adjust as needed */
+    max-height: 200px; /* Adjust as needed */
+  }
+ 
+  .projects .projects-description-box h5,
+  .projects .projects-description-box small {
+    font-size: 0.6rem !important;
+    
+  }
+
+  
+  .projects .projects-description-box p {
+    display: none;
+    font-size: 0.4rem !important;
+  }
+}
+
+
+@media (max-width: 480px) {
+  /* Adjust card layout and size for mobile devices */
+  .projects .projects-card {
+    flex-direction: column;
+    min-height: 160px; /* Adjust as needed */
+    max-height: 160px; /* Adjust as needed */
+  }
+  .projects .projects-description-box h5,
+  .projects .projects-description-box small {
+    font-size: 0.55rem !important;
+    
+    
+  }
+
+  
+  .projects .projects-description-box p {
+    display: none;
+    font-size: 0.4rem !important;
+  }}
 
 
 /*--------------------------------------------------------------
@@ -1506,8 +1559,5 @@ transform: translateY(-4px);
 }
 
 /*--------------------------------------------------------------
-# Starter Section Section
+# project details page Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
