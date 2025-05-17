@@ -41,7 +41,7 @@ fetch('assets/js/projects.json')
       projectsContainer.appendChild(projectItem);
     });
 
-    // ✅ Once all projects are loaded, initialize Isotope
+    // Once all projects are loaded, initialize Isotope
     imagesLoaded(projectsContainer, function () {
       const iso = new Isotope(projectsContainer, {
         itemSelector: '.isotope-item',

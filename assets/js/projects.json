@@ -1,73 +1,88 @@
 [
     {
-      "title": "Modern Dashboard Interface",
-      "description": "Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.",
-      "category": "AIML",
-      "image": "assets/img/projects/app-1.jpg",
-      "link": "pages/projects-details.html",
-      "tag": "Web Design"
-    },
-    {
-      "title": "Zomato Food Trends",
-      "description": "Analyzed city-wise trends using NLP and visualized order spikes.",
+      "projectId": 1,
+      "title": "Data Science Salary Prediction",
+      "description": "Analyzes salary trends in the data science field, exploring factors such as job titles, experience levels, and geographic locations to understand compensation patterns.",
       "category": "Visual",
-      "image": "assets/img/projects/app-2.jpg",
-      "link": "pages/zomato-details.html",
+      "image": "assets/img/projects/DataScienceJob-1.png",
+      "link": "pages/projects-details.html?projectId=1",
+      "url":"https://github.com/MahimaMapala/Data-Visualization/tree/main/DataScienceSalary",
       "tag": "Data Visualization"
     },
     {
-      "title": "Zomato Food Trends",
-      "description": "Analyzed city-wise trends using NLP and visualized order spikes.",
-      "category": "Games",
-      "image": "assets/img/projects/app-2.jpg",
-      "link": "pages/zomato-details.html",
+      "projectId": 2,
+      "title": "E-Commerce Sales Trends",
+      "description": "Examines sales data from an e-commerce platform to identify trends over time, seasonal effects, and product performance, aiding in strategic decision-making.",
+      "category": "Visual",
+      "image": "assets/img/projects/E-Commerce-Sales-Trends-main.png",
+      "link": "pages/projects-details.html?projectId=2",
+      "url":"https://github.com/MahimaMapala/Data-Visualization/tree/main/ECommerceSalesTrends",
       "tag": "Data Visualization"
     },
     {
-      "title": "Zomato Food Trends",
-      "description": "Analyzed city-wise trends using NLP and visualized order spikes.",
-      "category": "AIML",
-      "image": "assets/img/projects/app-2.jpg",
-      "link": "pages/zomato-details.html",
+      "projectId": 3,
+      "title": "Glassdoor Data science job posting Analysis",
+      "description": "Focus on job postings for data science roles on Glassdoor, extracting insights about in-demand skills, required qualifications, and industry demand.",
+      "category": "Visual",
+      "image": "assets/img/projects/Glassdoor Data science job posting Analysis.png",
+      "link": "pages/projects-details.html?projectId=3",
+      "url":"https://github.com/MahimaMapala/Data-Visualization/tree/main/GlassdoorDataScienceJobPostingAnalysis",
+      "tag": "Data Visualization"
+    },
+    {
+      "projectId": 4,
+      "title": "Heart Attack Analysis",
+      "description": "Investigates medical data related to heart attacks, identifying key risk factors and patient demographics to understand and predict occurrences.",
+      "category": "Visual",
+      "image": "assets/img/projects/Heart Attack Analysis.png",
+      "link": "pages/projects-details.html?projectId=4",
+      "url":"https://github.com/MahimaMapala/Data-Visualization/tree/main/HeartAttackAnalysis",
       "tag": "Data Visualization"
     },    {
-      "title": "Modern Dashboard Interface",
-      "description": "Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.",
-      "category": "AIML",
-      "image": "assets/img/projects/app-1.jpg",
-      "link": "pages/projects-details.html",
-      "tag": "Web Design"
-    },
-    {
-      "title": "Zomato Food Trends",
-      "description": "Analyzed city-wise trends using NLP and visualized order spikes.",
+      "projectId": 5,
+      "title": "Netflix Movie Analysis",
+      "description": "Explores Netflix's movie dataset, analyzing aspects like genre distribution, release years, and viewer ratings to uncover content trends.",
       "category": "Visual",
-      "image": "assets/img/projects/app-2.jpg",
-      "link": "pages/zomato-details.html",
+      "image": "assets/img/projects/Netflix Movie Analysis.png",
+      "link": "pages/projects-details.html?projectId=5",
+      "url":"https://github.com/MahimaMapala/Data-Visualization/tree/main/NetflixMovieAnalysis",
       "tag": "Data Visualization"
     },
     {
+      "projectId": 6,
+      "title": "Pokemon Data Analysis",
+      "description": "Delves into the attributes of Pokémon characters, examining statistics such as types, abilities, and evolution stages to understand their characteristics and strengths.",
+      "category": "Visual",
+      "image": "assets/img/projects/Pokemon Data Analysis.png",
+      "link": "pages/projects-details.html?projectId=6",
+      "url":"https://github.com/MahimaMapala/Data-Visualization/tree/main/Pokemon",      
+      "tag": "Data Visualization"
+    },
+    {
+      "projectId": 7,
       "title": "Zomato Food Trends",
       "description": "Analyzed city-wise trends using NLP and visualized order spikes.",
       "category": "Games",
       "image": "assets/img/projects/app-2.jpg",
-      "link": "pages/zomato-details.html",
+      "link": "pages/projects-details.html?projectId=7",
       "tag": "Data Visualization"
     },
     {
+      "projectId": 8,
       "title": "Zomato Food Trends",
       "description": "Analyzed city-wise trends using NLP and visualized order spikes.",
       "category": "Visual",
       "image": "assets/img/projects/app-2.jpg",
-      "link": "pages/zomato-details.html",
+      "link": "pages/projects-details.html?projectId=8",
       "tag": "Data Visualization"
     },
     {
+      "projectId": 9,
       "title": "Zomato Food Trends",
       "description": "Analyzed city-wise trends using NLP and visualized order spikes.",
       "category": "Games",
       "image": "assets/img/projects/app-2.jpg",
-      "link": "pages/zomato-details.html",
+      "link": "pages/projects-details.html?projectId=9",
       "tag": "Data Visualization"
     }
   ]

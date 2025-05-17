@@ -5,7 +5,7 @@ function getUrlParameter(name) {
 }
 
 // Function to load project details
-function loadProjectDetails() {
+async function loadProjectDetails() {
     const projectId = getUrlParameter('projectId'); // Get the project ID from the URL
     if (!projectId) {
         console.error('No project ID found in the URL');
@@ -13,49 +13,82 @@ function loadProjectDetails() {
     }
 
     // Use project ID to load the relevant project data (e.g., from a JSON file or database)
-    const project = getProjectDetailsById(projectId);
+    const project = await getProjectDetailsById(projectId);
+    
+    console.log('title:', project);
+
 
     // Insert the project details into the page
-    const projectInfoDiv = document.getElementById('projectInfo');
+    const projectInfoDiv = document.getElementById('projectImage');
     projectInfoDiv.innerHTML = `
-        <div class="projects-info" data-aos="fade-up" data-aos-delay="200">
-            <h3>Project information</h3>
-            <ul>
-                <li><strong>Category</strong>: ${project.category}</li>
-                <li><strong>Client</strong>: ${project.client}</li>
-                <li><strong>Project date</strong>: ${project.date}</li>
-                <li><strong>Project URL</strong>: <a href="${project.url}" target="_blank">${project.url}</a></li>
-            </ul>
-        </div>
-        <div class="projects-description" data-aos="fade-up" data-aos-delay="300">
-            <h2>${project.title}</h2>
-            <p>${project.description}</p>
-        </div>
-    `;
-}
+              <div class="col-lg-8">
+            <div class="projects-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="../${project.image}" alt="${project.title}">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="../${project.image}" alt="${project.title}">
+                </div>
+
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" >
+
+            
+
+              <div class="projects-info" data-aos="fade-up" data-aos-delay="200">
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+                <ul>
+                  <li><strong>Category</strong>:${project.tag}</li>
+                  <li><strong>Client</strong>: ASU Company</li>
+                  <li><strong>Project date</strong>: 01 March, 2020</li>
+                  <li><i class="bi bi-github"> </i> <strong>Project URL</strong>:  <a href="${project.url}" target="_blank">Click Here</a></li>
+                </ul>
+              </div>
+              
+
+          </div>
+            `;
+        }
 
 // Sample function to simulate loading project details from an object (this could be from a database, JSON file, etc.)
-function getProjectDetailsById(projectId) {
-    const projects = {
-        1: {
-            category: 'Web Design',
-            client: 'ASU Company',
-            date: '01 March, 2020',
-            url: 'https://www.example.com',
-            title: 'Exercitationem repudiandae officiis neque suscipit',
-            description: 'Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.'
-        },
-        2: {
-            category: 'Mobile App',
-            client: 'Tech Innovations',
-            date: '15 May, 2021',
-            url: 'https://www.techinnovations.com',
-            title: 'App Development for E-commerce',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit interdum venenatis.'
-        },
-        // Add more projects as needed
-    };
-    return projects[projectId];
+async function getProjectDetailsById(projectId) {
+
+    const response = await fetch('../assets/js/projects.json');
+    if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const projects = await response.json();
+    const id = Number(projectId);
+    //console.log('Loaded projects:', projects); // <-- This will print the data
+
+    return projects.find(project => project.projectId === id);
+
 }
 
 // Call the function to load the project details on page load
