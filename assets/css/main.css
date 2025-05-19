@@ -1142,8 +1142,8 @@ transform: translateY(-4px);
   /* Adjust card layout and size for mobile devices */
   .projects .projects-card {
     flex-direction: column;
-    min-height: 200px; /* Adjust as needed */
-    max-height: 200px; /* Adjust as needed */
+    /* min-height: 200px; Adjust as needed */
+    /* max-height: 200px; /* Adjust as needed */
   }
  
   .projects .projects-description-box h5,
@@ -1164,8 +1164,8 @@ transform: translateY(-4px);
   /* Adjust card layout and size for mobile devices */
   .projects .projects-card {
     flex-direction: column;
-    min-height: 160px; /* Adjust as needed */
-    max-height: 160px; /* Adjust as needed */
+    /* min-height: 160px; /* Adjust as needed */
+    /* max-height: 160px; /* Adjust as needed */
   }
   .projects .projects-description-box h5,
   .projects .projects-description-box small {
