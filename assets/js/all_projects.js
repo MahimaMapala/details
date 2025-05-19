@@ -20,8 +20,10 @@ fetch('assets/js/projects.json')
       const categoryClass = categoryMap[project.category] || '';
 
       const projectItem = document.createElement('div');
-      projectItem.classList.add('col-4' ,'isotope-item', `filter-${project.category.toLowerCase()}`);
-      
+      //projectItem.classList.add('col-4' ,'isotope-item', `filter-${project.category.toLowerCase()}`);
+      //projectItem.classList.add('col-lg-4', 'col-md-6' ,'isotope-item', `filter-${project.category.toLowerCase()}`);
+      projectItem.classList.add('col-6' ,'isotope-item', `filter-${project.category.toLowerCase()}`);
+
       projectItem.innerHTML = `
           <div class="projects-card">
             <a href="${project.link}" title="More Details" class="text-decoration-none text-reset">
